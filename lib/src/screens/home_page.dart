@@ -384,9 +384,9 @@ class _HomePageState extends State<HomePage> {
                     ], rows: [
                       _dataRow(),
                       _dataRow2(),
-                      _dataRowV(),
-                      _dataRowV(),
-                      _dataRowV(),
+                      _dataRow3(),
+                      _dataRow4(),
+                      _dataRow5(),
                       _dataRowV(),
                       _dataRowV(),
                       _dataRowV(),
@@ -457,7 +457,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   DataRow _dataRow2() {
-    if (HomePage.lista2.length != 18) {
+    if (HomePage.lista2.length < 18) {
       return const DataRow(cells: [
         DataCell(Center(child: Text(''))),
         DataCell(Center(child: Text(''))),
@@ -480,6 +480,90 @@ class _HomePageState extends State<HomePage> {
         DataCell(Center(child: Text(HomePage.lista2[15]))),
         DataCell(Center(child: Text(HomePage.lista2[16]))),
         DataCell(Center(child: Text(HomePage.lista2[17]))),
+      ]);
+    }
+  }
+
+  DataRow _dataRow3() {
+    if (HomePage.lista2.length < 27) {
+      return const DataRow(cells: [
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+      ]);
+    } else {
+      return DataRow(cells: [
+        DataCell(Center(child: Text(HomePage.lista2[18]))),
+        DataCell(Center(child: Text(HomePage.lista2[19]))),
+        DataCell(Center(child: Text(HomePage.lista2[20]))),
+        DataCell(Center(child: Text(HomePage.lista2[21]))),
+        DataCell(Center(child: Text(HomePage.lista2[22]))),
+        DataCell(Center(child: Text(HomePage.lista2[23]))),
+        DataCell(Center(child: Text(HomePage.lista2[24]))),
+        DataCell(Center(child: Text(HomePage.lista2[25]))),
+        DataCell(Center(child: Text(HomePage.lista2[26]))),
+      ]);
+    }
+  }
+
+  DataRow _dataRow4() {
+    if (HomePage.lista2.length < 36) {
+      return const DataRow(cells: [
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+      ]);
+    } else {
+      return DataRow(cells: [
+        DataCell(Center(child: Text(HomePage.lista2[27]))),
+        DataCell(Center(child: Text(HomePage.lista2[28]))),
+        DataCell(Center(child: Text(HomePage.lista2[29]))),
+        DataCell(Center(child: Text(HomePage.lista2[30]))),
+        DataCell(Center(child: Text(HomePage.lista2[31]))),
+        DataCell(Center(child: Text(HomePage.lista2[32]))),
+        DataCell(Center(child: Text(HomePage.lista2[33]))),
+        DataCell(Center(child: Text(HomePage.lista2[34]))),
+        DataCell(Center(child: Text(HomePage.lista2[35]))),
+      ]);
+    }
+  }
+
+  DataRow _dataRow5() {
+    if (HomePage.lista2.length < 45) {
+      return const DataRow(cells: [
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+        DataCell(Center(child: Text(''))),
+      ]);
+    } else {
+      return DataRow(cells: [
+        DataCell(Center(child: Text(HomePage.lista2[36]))),
+        DataCell(Center(child: Text(HomePage.lista2[37]))),
+        DataCell(Center(child: Text(HomePage.lista2[38]))),
+        DataCell(Center(child: Text(HomePage.lista2[39]))),
+        DataCell(Center(child: Text(HomePage.lista2[40]))),
+        DataCell(Center(child: Text(HomePage.lista2[41]))),
+        DataCell(Center(child: Text(HomePage.lista2[42]))),
+        DataCell(Center(child: Text(HomePage.lista2[43]))),
+        DataCell(Center(child: Text(HomePage.lista2[44]))),
       ]);
     }
   }

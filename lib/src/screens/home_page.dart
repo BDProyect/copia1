@@ -17,6 +17,11 @@ class HomePage extends StatefulWidget {
   bool temp;
 
   static int contador = 0;
+  static int r2 = 0;
+  static int r3 = 0;
+  static int r4 = 0;
+  static int r5 = 0;
+  static int r6 = 0;
   String fecha,
       dia,
       carrera,
@@ -378,17 +383,14 @@ class _HomePageState extends State<HomePage> {
                       )
                     ], rows: [
                       _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow(),
-                      _dataRow()
+                      _dataRow2(),
+                      _dataRowV(),
+                      _dataRowV(),
+                      _dataRowV(),
+                      _dataRowV(),
+                      _dataRowV(),
+                      _dataRowV(),
+                      _dataRowV(),
                     ]),
                   ),
                 ),
@@ -412,7 +414,6 @@ class _HomePageState extends State<HomePage> {
       HomePage.lista2.add(widget.alumnos);
       HomePage.lista2.add(widget.software);
     }
-    print(HomePage.lista2);
   }
 
   List<DataRow> inputRow(List<DataRow> dr) {
@@ -481,6 +482,20 @@ class _HomePageState extends State<HomePage> {
         DataCell(Center(child: Text(HomePage.lista2[17]))),
       ]);
     }
+  }
+
+  DataRow _dataRowV() {
+    return const DataRow(cells: [
+      DataCell(Center(child: Text(''))),
+      DataCell(Center(child: Text(''))),
+      DataCell(Center(child: Text(''))),
+      DataCell(Center(child: Text(''))),
+      DataCell(Center(child: Text(''))),
+      DataCell(Center(child: Text(''))),
+      DataCell(Center(child: Text(''))),
+      DataCell(Center(child: Text(''))),
+      DataCell(Center(child: Text(''))),
+    ]);
   }
 
   ButtonStyle _elevatedButtonStyle(BuildContext context) {
